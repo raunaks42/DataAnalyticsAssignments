@@ -6,8 +6,8 @@ The impurity is the measure as given at the top by Gini, the samples are the nu
 Following this part of the tree down, the nodes to the left are TRUE and the nodes to the right are FALSE:
     1. We see that we have 19 observations left to classify: 9 did not survive and 10 did.
     2. From this point the most information gain is how many siblings (SibSp) were aboard.
-A. 9 out of the 10 samples with less than 2.5 siblings survived.
-B. This leaves 10 observations left, 9 did not survive and 1 did.
+        a. 9 out of the 10 samples with less than 2.5 siblings survived.
+        b. This leaves 10 observations left, 9 did not survive and 1 did.
     3. 6 of these children that only had one parent (Parch) aboard did not survive.
     4. None of the children aged > 3.5 survived
     5. Of the 2 remaining children, the one with > 4.5 siblings did not survive.
