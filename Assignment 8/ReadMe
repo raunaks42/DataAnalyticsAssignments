@@ -1,0 +1,14 @@
+﻿To visuialise the tree, graphviz must be installed. An exported picture has been included in the folder.
+The root node, with the most information gain, tells us that the biggest factor in determining survival is Sex.
+If we zoom in on some of the leaf nodes, we can follow some of the decisions down.
+We have already zoomed into the part of the decision tree that describes males, with a ticket lower than first class, that are under the age of 10.
+The impurity is the measure as given at the top by Gini, the samples are the number of observations remaining to classify and the value is the how many samples are in class 0 (Did not survive) and how many samples are in class 1 (Survived).
+Following this part of the tree down, the nodes to the left are TRUE and the nodes to the right are FALSE:
+    1. We see that we have 19 observations left to classify: 9 did not survive and 10 did.
+    2. From this point the most information gain is how many siblings (SibSp) were aboard.
+A. 9 out of the 10 samples with less than 2.5 siblings survived.
+B. This leaves 10 observations left, 9 did not survive and 1 did.
+    3. 6 of these children that only had one parent (Parch) aboard did not survive.
+    4. None of the children aged > 3.5 survived
+    5. Of the 2 remaining children, the one with > 4.5 siblings did not survive.
+ 
